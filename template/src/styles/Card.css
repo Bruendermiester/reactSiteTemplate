@@ -1,0 +1,24 @@
+.card_wrapper {
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    border: 1px solid #000;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.card_image {
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+}
+.card_text {
+    flex: 3;
+    font-size: 24px;
+    padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .card_text {
+        display: none;
+    }
+}
