@@ -13,6 +13,8 @@ header {
 .link {
     flex: 3;
     padding: 7px;
-    cursor: pointer;
+    color: #FFF;
+}
+.link a {
     color: #FFF;
 }

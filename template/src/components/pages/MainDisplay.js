@@ -1,11 +1,13 @@
 import React from 'react';
-import Card from './Card'
-import '../styles/MainDisplay.css';
+import Card from '../Card'
+import Header from '../Header'
+import '../../styles/pages/MainDisplay.css';
 
 class MainDisplay extends React.Component {
     render() {
         return (
             <div>
+                <Header/>
                 <div className="main_display">
                     <Card/>
                     <Card/>
