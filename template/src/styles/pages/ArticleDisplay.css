@@ -1,0 +1,26 @@
+#article_display {
+    min-width: 200px;
+    min-height: 1000px;
+    max-width: 800px;
+    border: 1px solid #000;
+    margin: 30px auto;
+    padding: 20px;
+}
+.main_image {
+    float: left;
+    width: 100%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.article_title {
+    margin: 50px 50px 25px 50px;
+    float: left;
+    min-width: 500px;
+}
+.article_body {
+    margin: 0 50px 0;
+    float: left;
+    min-width: 500px;
+}

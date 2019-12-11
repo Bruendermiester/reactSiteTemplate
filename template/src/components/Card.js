@@ -10,7 +10,12 @@ class Card extends React.Component {
         };
 
         return (
-            <Link to="article">
+            <Link to={{
+                pathname: `article/${this.props.article.id}`,
+                state: {
+                    article: this.props.article
+                }
+                }}>
                 <div className="card_wrapper" >
                     <div className="card_image" style={ backgroundImage }></div>
                     <div className="card_text">
