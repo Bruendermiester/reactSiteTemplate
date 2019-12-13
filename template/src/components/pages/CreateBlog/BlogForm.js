@@ -3,11 +3,11 @@ import { Field, FieldArray, reduxForm } from 'redux-form'
 import validate from './validate';
 
 const renderField = ({ input, label, type, meta: { touched, error } }) => (
-    <div>
+    <div className="default_shading">
       <label>{label}:</label>
       <div>
         <input {...input} type={type}/>
-        {touched && error && <span>{error}</span>}
+        <div className="error">{touched && error && <span>{error}</span>}</div>
       </div>
     </div>
 );
@@ -16,23 +16,24 @@ const renderTextAreaField = ({ input, label, type, meta: { touched, error } }) =
   
     let getWordCount = (text) => {
       if(text && text.length > 0) {
-        let enteredText = text;
-        let numberOfLineBreaks = (text.match(/\n/g)||[]).length;
-        let wordCount = enteredText.trim().split(' ').length + numberOfLineBreaks;
+        let enteredText = text.replace(/\n/g, " ");
+        let wordCount = enteredText.trim().split(' ').length;
         return wordCount;
       }
+      else {
+        return 0
+      }
     }  
-
 
     return (
       <div>
         <label>{label}</label>
         <div>
           <textarea {...input} type={type} />
-          {touched && error && <span>{error}</span>}
           <div className="info_container">
-            <div className="word_count"> Word Count: <span className="word_count_span"> {getWordCount(input.value)}</span></div>
+            <div className="word_count"> WORDS: <span className="word_count_span"> {getWordCount(input.value)}</span></div>
             <div className="character_count"> CC: <span className="character_count_span"> {input.value.length}</span></div>
+            <div className="error">{touched && error && <span>{error}</span>}</div>
           </div>
         </div>
       </div>
@@ -42,7 +43,7 @@ const renderTextAreaField = ({ input, label, type, meta: { touched, error } }) =
 const renderTexts = ({ fields, meta: { touched, error, submitFailed } }) => (
     <div>
       {fields.map((texts, index) => (
-        <div key={index}>
+        <div className="default_shading" key={index}>
 
           <h4>Text #{index + 1}           
             <button
@@ -88,11 +89,6 @@ const renderTexts = ({ fields, meta: { touched, error, submitFailed } }) => (
         </form>
     );
   };
-  const mapStateToProps = (state) => {
-    console.log(state)
-    return { articles: state.articles };
-  }
-
   
   export default reduxForm({
     form: 'fieldArrays', // a unique identifier for this form
