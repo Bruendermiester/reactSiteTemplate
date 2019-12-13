@@ -32,19 +32,22 @@ label {
     background-image: linear-gradient(#4f93ce, #285f8f);
     border: 1px solid #285f8f;
     flex: 1;
-    margin: 25px 75px;
+    margin: 25px 5px;
     cursor: pointer;
 }
 .add_text:hover, .add_image:hover {
     background-image: linear-gradient(#63a0d4, #337ab7);
 }
 .exit {
-    background-color: red;
+    background-image: linear-gradient(#d52626, #631414);
     color: #FFF;
     width: 25px;
     height: 25px;
-    border-radius: 50px;
+    border-radius: 5px;
     float: right;
     border: none;
     cursor: pointer;
+}
+.exit:hover {
+    background-image: linear-gradient(rgb(234, 71, 71), #8F2727);
 }
