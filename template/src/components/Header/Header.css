@@ -6,7 +6,7 @@ header {
 .header_links {
     display: flex;
     height: 100%;
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
 }

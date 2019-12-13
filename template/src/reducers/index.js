@@ -1,4 +1,5 @@
-import { combineReducers } from 'redux';
+import { createStore, combineReducers } from 'redux';
+import { reducer as reduxFormReducer } from 'redux-form';
 
 const articlesReducer = () => {
     return [
@@ -60,7 +61,14 @@ const selectedArticlesReducer = (selectedArticle=null, action) => {
     return selectedArticle;
 }
 
-export default combineReducers({
+const reducer = combineReducers({
     articles: articlesReducer,
-    selectedArticle: selectedArticlesReducer
+    selectedArticle: selectedArticlesReducer,
+    form: reduxFormReducer
 });
+
+const store = (window.devToolsExtension
+? window.devToolsExtension()(createStore)
+: createStore)(reducer);
+
+export default store

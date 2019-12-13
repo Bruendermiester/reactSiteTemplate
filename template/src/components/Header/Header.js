@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Header.css';
+import './Header.css';
 
 class Header extends React.Component {
     render() {
@@ -8,6 +8,7 @@ class Header extends React.Component {
             <header>
                 <div className="header_links">
                     <div className="link"><Link to="/">Home</Link></div>
+                    <div className="link"><Link to="/create">Create Blog</Link></div>
                     <div className="link">Articles</div>
                     <div className="link">About Us</div>
                 </div>

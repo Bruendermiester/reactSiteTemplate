@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from '../Card'
-import Header from '../Header'
+import Card from '../../Card/Card'
+import Header from '../../Header/Header'
 import { connect } from 'react-redux';
-import '../../styles/pages/MainDisplay.css';
+import './MainDisplay.css';
 
 class MainDisplay extends React.Component {
 

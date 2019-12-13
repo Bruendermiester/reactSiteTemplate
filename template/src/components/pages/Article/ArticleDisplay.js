@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Header'
-import '../../styles/pages/ArticleDisplay.css';
+import Header from '../../Header/Header'
+import './ArticleDisplay.css';
 
 class ArticleDisplay extends React.Component {
     render() {
