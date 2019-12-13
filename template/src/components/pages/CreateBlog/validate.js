@@ -3,7 +3,6 @@ const validate = values => {
     if (!values.title) {
       errors.title = 'Required';
     }
-    console.log(values)
     if (!values.texts || !values.texts.length) {
       errors.texts = { _error: 'At least one texts must be entered' };
     } else {

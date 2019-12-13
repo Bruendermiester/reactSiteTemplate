@@ -51,3 +51,13 @@ label {
 .exit:hover {
     background-image: linear-gradient(rgb(234, 71, 71), #8F2727);
 }
+.info_container {
+    display: flex;;
+}
+.word_count, .character_count { 
+    color: #0000c5;
+    flex: 1;
+}
+.word_count_span, .character_count_span { 
+    color: #009205;
+}

@@ -12,15 +12,32 @@ const renderField = ({ input, label, type, meta: { touched, error } }) => (
     </div>
 );
 
-const renderTextAreaField = ({ input, label, type, meta: { touched, error } }) => (
-    <div>
-      <label>{label}</label>
+const renderTextAreaField = ({ input, label, type, meta: { touched, error } }) => {
+  
+    let getWordCount = (text) => {
+      if(text && text.length > 0) {
+        let enteredText = text;
+        let numberOfLineBreaks = (text.match(/\n/g)||[]).length;
+        let wordCount = enteredText.trim().split(' ').length + numberOfLineBreaks;
+        return wordCount;
+      }
+    }  
+
+
+    return (
       <div>
-        <textarea {...input} type={type}/>
-        {touched && error && <span>{error}</span>}
+        <label>{label}</label>
+        <div>
+          <textarea {...input} type={type} />
+          {touched && error && <span>{error}</span>}
+          <div className="info_container">
+            <div className="word_count"> Word Count: <span className="word_count_span"> {getWordCount(input.value)}</span></div>
+            <div className="character_count"> CC: <span className="character_count_span"> {input.value.length}</span></div>
+          </div>
+        </div>
       </div>
-    </div>
-);
+    );
+  }
 
 const renderTexts = ({ fields, meta: { touched, error, submitFailed } }) => (
     <div>
@@ -63,14 +80,19 @@ const renderTexts = ({ fields, meta: { touched, error, submitFailed } }) => (
             />
             <FieldArray name="texts" component={renderTexts} />
             <div>
-            <button type="submit" disabled={submitting}>Submit</button>
-            <button type="button" disabled={pristine || submitting} onClick={reset}>
-                Clear All Values
-            </button>
+              <button type="submit" disabled={submitting}>Submit</button>
+              <button type="button" disabled={pristine || submitting} onClick={reset}>
+                  Clear All Values
+              </button>
             </div>
         </form>
     );
   };
+  const mapStateToProps = (state) => {
+    console.log(state)
+    return { articles: state.articles };
+  }
+
   
   export default reduxForm({
     form: 'fieldArrays', // a unique identifier for this form
