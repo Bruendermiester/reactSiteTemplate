@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../Header/Header'
-import BlogForm from './BlogForm';
+import BlogForm from '../../Form/BlogForm';
 import './BlogCreateDisplay.css';
 
 

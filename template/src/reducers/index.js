@@ -1,5 +1,4 @@
 import { createStore, combineReducers } from 'redux';
-import { reducer as reduxFormReducer } from 'redux-form';
 
 const articlesReducer = () => {
     return [
@@ -60,11 +59,24 @@ const selectedArticlesReducer = (selectedArticle=null, action) => {
     }
     return selectedArticle;
 }
+const updateBlogTitleReducer = (title='', action) => {
+    if (action.type === 'UPDATE_BLOG_TITLE') {
+        return action.payload;
+    }
+    return title;
+}
+const updateBlogBodyContentReducer = (content=[], action) => {
+    if (action.type === 'UPDATE_BLOG_BODY_CONTENT') {
+        return action.payload;
+    }
+    return content;
+} 
 
 const reducer = combineReducers({
     articles: articlesReducer,
     selectedArticle: selectedArticlesReducer,
-    form: reduxFormReducer
+    title: updateBlogTitleReducer,
+    content: updateBlogBodyContentReducer
 });
 
 const store = (window.devToolsExtension
