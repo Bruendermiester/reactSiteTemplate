@@ -40,34 +40,77 @@ const renderTextAreaField = ({ input, label, type, meta: { touched, error } }) =
     );
   }
 
-const renderTexts = ({ fields, meta: { touched, error, submitFailed } }) => (
-    <div>
-      {fields.map((texts, index) => (
-        <div className="default_shading" key={index}>
+const renderImageField = ({ input, label, type, meta: { touched, error } }) => {
 
-          <h4>Text #{index + 1}           
-            <button
-                className="exit"
-                type="button"
-                title="Remove Text"
-                onClick={() => fields.remove(index)}
-            >X</button>
-          </h4>
-          <Field
-            name={`${texts}.text`}
-            type="text"
-            component={renderTextAreaField}
-          />
-        </div>
-      ))}
-      <div className="action_container">
-        <button className="add_text" type="button" onClick={() => fields.push({})}>Add Text Field</button>
-        {(touched || submitFailed) && error && <span>{error}</span>}
-        <button className="add_image" type="button" >Add Image Field</button>
-        {(touched || submitFailed) && error && <span>{error}</span>}        
+  let handleChange = (event) => {
+    console.log(event, 'hello?')
+    if(event){
+      var file = URL.createObjectURL(event.target.files[0]);
+    }
+  }
+
+  return (
+    <div>
+      <div>
+        <input defaultValue='' onChange={handleChange()} type={type} accept="image/*"/>
+        <img />
+        <div className="error">{touched && error && <span>{error}</span>}</div>
       </div>
     </div>
   );
+}
+
+const renderTexts = ({ fields, meta: { touched, error, submitFailed } }) => {
+
+  let new_fields = fields.getAll() || [];
+
+  if(new_fields.length > 0) {
+    return (
+      <div className="test">
+        {console.log(new_fields)}
+        {new_fields.map((texts, index) => {
+          return (
+            <div className="default_shading" key={index}>
+
+              <h4>Text #{index + 1}
+                <button
+                    className="exit"
+                    type="button"
+                    title="Remove Text"
+                    onClick={() => fields.remove(index)}
+                >X</button>
+              </h4>
+                <Field
+                name={`${texts.type}` + index}
+                type={texts.type}
+                component={texts.type === 'text' ? renderTextAreaField : renderImageField }
+                 />
+            </div>
+          )
+            }
+        )}
+        <div className="action_container">
+          <button className="add_text" type="button" onClick={() => fields.push({"type": 'text'})}>Add Text Field</button>
+          {(touched || submitFailed) && error && <span>{error}</span>}
+          <button className="add_image" type="button" onClick={() => fields.push({"type": 'file'})}>Add Image Field</button>
+          {(touched || submitFailed) && error && <span>{error}</span>}        
+        </div>
+      </div>
+    );
+    }
+    else {
+      return (
+        <div>
+        <div className="action_container">
+          <button className="add_text" type="button" onClick={() => fields.push({"type": 'text'})}>Add Text Field</button>
+          {(touched || submitFailed) && error && <span>{error}</span>}
+          <button className="add_image" type="button" onClick={() => fields.push({"type": 'file'})}>Add Image Field</button>
+          {(touched || submitFailed) && error && <span>{error}</span>}        
+        </div>
+      </div>
+      )
+    }
+}
 
   const FieldArraysForm = props => {
     const { handleSubmit, pristine, reset, submitting } = props;
