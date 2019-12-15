@@ -105,7 +105,735 @@ const articlesReducer = () => {
             "author": "Jonathan Bruenderman",
             "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
             "comments": []
-        },           
+        },
+        {
+            "id": 5,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 6,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 7,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 8,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 9,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 10,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 11,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 12,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 13,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 14,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 15,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 16,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 17,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 18,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 19,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 20,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 21,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 22,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 23,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 24,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 25,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 26,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 27,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 28,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 29,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 30,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 31,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },
+        {
+            "id": 32,
+            "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
+            "author": "Jonathan Bruenderman",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
+            "comments": []
+        },                                                        
     ];
 };
 
@@ -139,6 +867,12 @@ const updateHeroImageReducer = (heroImage={}, action) => {
     }
     return heroImage;
 }
+const updatePagination = (pageNum=1, action) => {
+    if (action.type === 'UPDATE_PAGINATION') {
+        return action.payload;
+    }
+    return pageNum;
+}
 
 const reducer = combineReducers({
     articles: articlesReducer,
@@ -146,7 +880,8 @@ const reducer = combineReducers({
     title: updateBlogTitleReducer,
     content: updateBlogBodyContentReducer,
     heroImage: updateHeroImageReducer,
-    submitted: submitFormReducer
+    submitted: submitFormReducer,
+    pageNum: updatePagination
 });
 
 const store = (window.devToolsExtension

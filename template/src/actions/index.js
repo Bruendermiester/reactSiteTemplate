@@ -28,4 +28,10 @@ export const updateHeroImage = heroImage => {
         type: "UPDATE_HERO_IMAGE",
         payload: heroImage
     };
-}
+};
+export const updatePagination = pageNum => {
+    return {
+        type: "UPDATE_PAGINATION",
+        payload: pageNum
+    };
+};
