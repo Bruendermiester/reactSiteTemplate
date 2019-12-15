@@ -127,11 +127,11 @@ const updateBlogBodyContentReducer = (content=[], action) => {
     }
     return content;
 } 
-const addArticle = (article={}, action) => {
-    // if (action.type === 'SUBMIT_FORM') {
-    //     return action.payload;
-    // }
-    // return article;
+const submitFormReducer = (bool=false, action) => {
+    if (action.type === 'SUBMIT_FORM') {
+        return action.payload;
+    }
+    return bool;
 }
 const updateHeroImageReducer = (heroImage={}, action) => {
     if (action.type === 'UPDATE_HERO_IMAGE') {
@@ -145,7 +145,8 @@ const reducer = combineReducers({
     selectedArticle: selectedArticlesReducer,
     title: updateBlogTitleReducer,
     content: updateBlogBodyContentReducer,
-    heroImage: updateHeroImageReducer
+    heroImage: updateHeroImageReducer,
+    submitted: submitFormReducer
 });
 
 const store = (window.devToolsExtension

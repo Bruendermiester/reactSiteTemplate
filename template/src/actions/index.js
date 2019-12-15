@@ -4,10 +4,10 @@ export const fetchArticles = articles => {
         payload: articles
     };
 };
-export const submitForm = article => {
+export const submitForm = bool => {
     return {
         type: "SUBMIT_FORM",
-        payload: article
+        payload: bool
     };
 };
 export const updateBlogBodyContent = content => {

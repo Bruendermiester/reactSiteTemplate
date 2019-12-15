@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import RenderFormBody from './RenderFormBody';
 import RenderInput from './RenderInput';
 import RenderHeroImage from './RenderHeroImage';
-import { submitForm } from '../../actions';
+import { Redirect } from 'react-router';
+import { submitForm, updateBlogBodyContent, updateBlogTitle, updateHeroImage } from '../../actions';
   
 class BlogForm extends React.Component {
 
@@ -14,6 +15,13 @@ class BlogForm extends React.Component {
 
   getRandomId = (max) => {
     return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  reset = () => {
+    this.props.updateBlogBodyContent([]);
+    this.props.updateBlogTitle('');
+    this.props.updateHeroImage('');
+    this.props.submitForm(true);
   }
 
   handleSubmit = (event) => {
@@ -27,8 +35,9 @@ class BlogForm extends React.Component {
       author: 'Jonathan Bruenderman',
       date: Date(Date.now())
     };
-    this.props.state.articles.push(article)
-   //this.props.submitForm(article);
+    this.props.state.articles.push(article);
+    // Uncomment when ready to clear and navigate to home page
+    // this.reset();
   }
 
   render() {
@@ -37,6 +46,7 @@ class BlogForm extends React.Component {
             <RenderInput />
             <RenderHeroImage />
             <RenderFormBody />
+            {this.props.state.submitted ? <Redirect to='/'/> : ''}
             <div>
               <button className="submit_form" type="submit">Submit</button>
             </div>
@@ -49,5 +59,5 @@ const mapStateToProps = (state) => {
   return { state: state };
 }
 
-BlogForm = connect(mapStateToProps, {submitForm})(BlogForm)
+BlogForm = connect(mapStateToProps, {submitForm, updateBlogBodyContent, updateBlogTitle, updateHeroImage })(BlogForm)
 export default BlogForm;
