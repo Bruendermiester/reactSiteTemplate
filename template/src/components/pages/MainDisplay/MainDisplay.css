@@ -10,6 +10,9 @@
     flex-direction: column;
     align-items: center;
 }
+.main_display a{
+    min-width: 100%;
+}
 .pagination {
     display: inline-block;
     padding-left: 0;
@@ -41,6 +44,7 @@
     background-color: #fff;
     border: 1px solid #ddd;
     margin-left: -1px;
+    min-width: auto;
 }
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
     z-index: 2;
