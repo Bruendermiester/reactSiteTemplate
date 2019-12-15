@@ -5,51 +5,107 @@ const articlesReducer = () => {
         {
             "id": 1,
             "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
-            "body": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu. \n Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
             "author": "Jonathan Bruenderman",
-            "images": "/assets/Test.png",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
             "comments": []
         },
         {
             "id": 2,
             "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
-            "body": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
             "author": "Jonathan Bruenderman",
-            "images": "/assets/Test.png",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
             "comments": []
         },
         {
             "id": 3,
             "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
-            "body": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
             "author": "Jonathan Bruenderman",
-            "images": "/assets/Test.png",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
             "comments": []
         },
         {
             "id": 4,
             "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
-            "body": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.",
+            "content": [
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "text",
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                },
+                {
+                    "type": "file",
+                    "src": '/assets/Test.png',
+                    "file": {}
+                }  
+            ],
+            "heroImage": {
+                "src": '/assets/Test.png',
+                "file": {}                
+            },
             "author": "Jonathan Bruenderman",
-            "images": "/assets/Test.png",
+            "date": "Fri Jun 22 2018 10:54:33 GMT+0530",
             "comments": []
-        },
-        {
-            "id": 5,
-            "title": "This is my Title",
-            "body": "This is my contents body of large amount of text",
-            "author": "Jonathan Bruenderman",
-            "images": "/assets/Test.png",
-            "comments": []
-        },
-        {
-            "id": 6,
-            "title": "This is my Title",
-            "body": "This is my contents body of large amount of text",
-            "author": "Jonathan Bruenderman",
-            "images": "/assets/Test.png",
-            "comments": []
-        }
+        },           
     ];
 };
 
@@ -71,12 +127,25 @@ const updateBlogBodyContentReducer = (content=[], action) => {
     }
     return content;
 } 
+const addArticle = (article={}, action) => {
+    // if (action.type === 'SUBMIT_FORM') {
+    //     return action.payload;
+    // }
+    // return article;
+}
+const updateHeroImageReducer = (heroImage={}, action) => {
+    if (action.type === 'UPDATE_HERO_IMAGE') {
+        return action.payload;
+    }
+    return heroImage;
+}
 
 const reducer = combineReducers({
     articles: articlesReducer,
     selectedArticle: selectedArticlesReducer,
     title: updateBlogTitleReducer,
-    content: updateBlogBodyContentReducer
+    content: updateBlogBodyContentReducer,
+    heroImage: updateHeroImageReducer
 });
 
 const store = (window.devToolsExtension

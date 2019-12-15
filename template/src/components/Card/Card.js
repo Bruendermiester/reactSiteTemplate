@@ -6,7 +6,7 @@ class Card extends React.Component {
     render() {
         
         let backgroundImage = {
-            backgroundImage: `url( ${this.props.article.images} )`
+            backgroundImage: `url( ${this.props.article.heroImage.src} )`
         };
 
         return (

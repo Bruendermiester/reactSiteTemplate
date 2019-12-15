@@ -10,7 +10,7 @@ class BlogCreateDisplay extends React.Component {
           <div> 
             <Header />
             <div id="create_display">
-              <BlogForm onSubmit/>
+              <BlogForm/>
             </div>
           </div>
       )}

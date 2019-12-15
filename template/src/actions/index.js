@@ -4,6 +4,12 @@ export const fetchArticles = articles => {
         payload: articles
     };
 };
+export const submitForm = article => {
+    return {
+        type: "SUBMIT_FORM",
+        payload: article
+    };
+};
 export const updateBlogBodyContent = content => {
     console.log("action call", content)
     return {
@@ -17,4 +23,9 @@ export const updateBlogTitle = title => {
         payload: title
     };
 };
-
+export const updateHeroImage = heroImage => {
+    return {
+        type: "UPDATE_HERO_IMAGE",
+        payload: heroImage
+    };
+}

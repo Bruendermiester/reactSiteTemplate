@@ -15,7 +15,7 @@ class RenderFormBody extends React.Component {
           return (
             <div className="default_shading" key={index}>
 
-              <h4>{'Field Type: '}
+              <h4>{`Field Type: ${content.type}`}
                 <button
                     className="exit"
                     type="button"
