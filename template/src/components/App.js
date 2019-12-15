@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import MainDisplay from './pages/MainDisplay/MainDisplay'
 import ArticleDisplay from './pages/Article/ArticleDisplay'
 import BlogCreateDisplay from './pages/CreateBlog/BlogCreateDisplay'
+import AboutUs from './pages/AboutUs/AboutUs'
 import '../styles/Main.css';
 
 
@@ -16,8 +17,7 @@ class App extends React.Component {
                         <Route path="/" exact component={ MainDisplay }/>
                         <Route path="/article/:handle" exact component={ ArticleDisplay }/>
                         <Route path="/create" exact component={ BlogCreateDisplay }/>
-                        <Route path="/edit" exact/>
-                        <Route path="/aboutus" exact/>
+                        <Route path="/aboutus" exact component={ AboutUs }/>
                     </div>
                 </BrowserRouter>
                 
