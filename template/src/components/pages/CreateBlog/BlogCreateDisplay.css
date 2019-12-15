@@ -1,7 +1,7 @@
 #create_display {
     min-width: 200px;
     max-width: 800px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin: 30px auto 0;
     padding: 20px;
@@ -68,7 +68,41 @@ label {
     border-radius: 15px;
     padding: 10px 17px 17px 10px;
     margin: 10px 0;
+    box-shadow: 0px 0px 5px rgba(7, 6, 11, 0.50);
 }
 .error {
     color: red;
+}
+.display_image {
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.box {
+    display: flex;
+}
+.upload_btn {
+    background-image: linear-gradient(#4f93ce, #285f8f);
+    padding: 7px 5px 10px;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.upload_btn:hover {
+    background-image: linear-gradient(#63a0d4, #337ab7);
+}
+.image_box {
+    display: flex;
+    flex-direction: column;
+}
+.image_size {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px auto;
 }
