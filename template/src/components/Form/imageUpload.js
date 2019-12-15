@@ -1,40 +1,42 @@
 import React from 'react'
 import { connect } from 'react-redux';
+import { updateBlogBodyContent } from '../../actions';
 
 class renderImageField  extends React.Component{
-  constructor(props) {
-    super(props)
-    this.onChange = this.onChange.bind(this)
-  }
 
-  onChange(e) {
-    const { input: { onChange } } = this.props
-    onChange(e.target.files[0])
-    if (e.target.files && e.target.files[0]) {
-        let reader = new FileReader();
-        reader.onload = (e) => {
-          document.getElementById(this.props.input.name).src = e.target.result;
-        };
-        reader.readAsDataURL(e.target.files[0]);
-    }
-  }
+  render() {
 
-  render(){
-    const { input: { value } } = this.props
-    const {input,label, required, meta, } = this.props  //whatever props you send to the component from redux-form Field
+    let newContent = Object.assign([], this.props.content); 
+    let displaySrc = newContent[this.props.index].src || '';
     return(
      <div>
-        <img id={input.name}></img>
+        <img id={`image-${this.props.index}`} src={displaySrc}></img>
         <div>
             <input
                 type='file'
                 accept='.jpg, .png, .jpeg'
-                onChange={this.onChange}
-        />
+                onChange={(e) => {
+                    if (e.target.files && e.target.files[0]) {
+                      let reader = new FileReader();
+                      newContent[this.props.index].file = e.target.files[0];
+                      reader.onload = (e) => {
+                        document.getElementById(`image-${this.props.index}`).src = e.target.result;
+                        newContent[this.props.index].src = e.target.result;
+                        this.props.updateBlogBodyContent(newContent);
+                      };
+                      reader.readAsDataURL(e.target.files[0]);
+
+                  }
+                }}/>
         </div>
      </div>
     )
     }
 }
 
+const mapStateToProps = (state) => {
+  return { content: state.content };
+}
+
+renderImageField = connect(mapStateToProps, {updateBlogBodyContent})(renderImageField)
 export default renderImageField;

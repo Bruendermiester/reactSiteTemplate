@@ -10,7 +10,6 @@ class RenderTextArea extends React.Component {
         if(newContent[this.props.index].text) {
             textValue = newContent[this.props.index].text;
         }
-        console.log(this.props)
         let getWordCount = (text) => {
             if(text && text.length > 0) {
             let enteredText = text.replace(/\n/g, " ");
@@ -18,7 +17,7 @@ class RenderTextArea extends React.Component {
             return wordCount;
             }
             else {
-            return 0
+                return 0
             }
         }
 

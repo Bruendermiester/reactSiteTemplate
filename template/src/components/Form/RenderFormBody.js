@@ -26,7 +26,7 @@ class RenderFormBody extends React.Component {
                     }}
                 >X</button>
               </h4>
-                {content.type === 'text' ? <RenderTextArea index={index}/> : <RenderImageField/>}
+                {content.type === 'text' ? <RenderTextArea index={index}/> : <RenderImageField index={index}/>}
             </div>
           )
         })}
