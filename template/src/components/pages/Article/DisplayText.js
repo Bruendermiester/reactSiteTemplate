@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ReactHtmlParser from 'react-html-parser';
 
 class DisplayText extends React.Component{
 
   render() {
-        let formatedBody = this.props.content.text.split ('\n').map((item, i) => <p key={i}>{item}</p>);
         return (
             <div className="text_box">
-                { formatedBody }
+                { ReactHtmlParser (this.props.content.text) }
             </div>
         )
     }
