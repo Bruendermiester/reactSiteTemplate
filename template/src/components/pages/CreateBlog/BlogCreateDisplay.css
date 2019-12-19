@@ -121,3 +121,25 @@ label {
 .submit_form:hover {
     background-image: linear-gradient(#63a0d4, #337ab7);
 }
+.editable_textarea {
+    font-family: sans-serif;
+    min-width: 100%;
+    min-height: 200px;
+    border: 1px dashed #aaa;
+    padding: 5px;
+    resize: none;
+    background-color: #FFF;
+}
+.action_btn {
+    background-image: linear-gradient(#4f93ce, #285f8f);
+    padding: 2px 5px 2px;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    max-width: 400px;    
+}
+.action_btn:hover {
+    background-image: linear-gradient(#63a0d4, #337ab7);
+}
