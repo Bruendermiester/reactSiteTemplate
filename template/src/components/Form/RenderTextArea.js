@@ -24,7 +24,7 @@ class RenderTextArea extends React.Component {
             }
         }
         let sanitizeConf = {
-            allowedTags: ["b", "i", "em", "strong", "a", "p", "h1"],
+            allowedTags: ["b", "i", "em", "strong", "a", "p", "h1", "ul", "li"],
             allowedAttributes: { a: ["href"] }
         };        
         let sanitize = () => {
@@ -52,6 +52,7 @@ class RenderTextArea extends React.Component {
                     <EditButton cmd="italic" />
                     <EditButton cmd="bold" />
                     <EditButton cmd="formatBlock" arg="h1" name="heading" />
+                    <EditButton cmd="insertUnorderedList" name="bullet"/>
                     <EditButton
                         className="action_btn"
                         cmd="createLink"
