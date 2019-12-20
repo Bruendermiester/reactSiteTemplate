@@ -24,7 +24,7 @@ class RenderTextArea extends React.Component {
             }
         }
         let sanitizeConf = {
-            allowedTags: ["b", "i", "em", "strong", "a", "p", "h1", "ul", "li"],
+            allowedTags: ["b", "i", "em", "strong", "a", "p", "h1", "ul", "li", "u"],
             allowedAttributes: { a: ["href"] }
         };        
         let sanitize = () => {
@@ -51,6 +51,7 @@ class RenderTextArea extends React.Component {
                     <div className="character_count"> CC: <span className="character_count_span"> {newContent[this.props.index].text ? newContent[this.props.index].text.length : 0}</span></div>
                     <EditButton cmd="italic" />
                     <EditButton cmd="bold" />
+                    <EditButton cmd="underline"/>
                     <EditButton cmd="formatBlock" arg="h1" name="heading" />
                     <EditButton cmd="insertUnorderedList" name="bullet"/>
                     <EditButton
