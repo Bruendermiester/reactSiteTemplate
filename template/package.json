@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap-less": "^3.3.8",
     "react": "^16.12.0",
+    "react-burger-menu": "^2.6.13",
     "react-contenteditable": "^3.3.3",
     "react-dom": "^16.12.0",
     "react-html-parser": "^2.0.2",

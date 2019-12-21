@@ -873,7 +873,6 @@ const updatePagination = (pageNum=1, action) => {
     }
     return pageNum;
 }
-
 const reducer = combineReducers({
     articles: articlesReducer,
     selectedArticle: selectedArticlesReducer,

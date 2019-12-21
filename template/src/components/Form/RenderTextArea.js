@@ -13,6 +13,9 @@ class RenderTextArea extends React.Component {
         if(newContent[this.props.index].text) {
             textValue = newContent[this.props.index].text;
         }
+        else {
+            newContent[this.props.index].text = '';
+        }
         let getWordCount = (text) => {
             if(text && text.length > 0) {
             let enteredText = text.replace(/\n/g, " ");
@@ -49,16 +52,16 @@ class RenderTextArea extends React.Component {
                 <div className="info_container">
                     <div className="word_count"> WORDS: <span className="word_count_span"> {getWordCount(newContent[this.props.index].text)}</span></div>
                     <div className="character_count"> CC: <span className="character_count_span"> {newContent[this.props.index].text ? newContent[this.props.index].text.length : 0}</span></div>
-                    <EditButton cmd="italic" />
-                    <EditButton cmd="bold" />
-                    <EditButton cmd="underline"/>
-                    <EditButton cmd="formatBlock" arg="h1" name="heading" />
-                    <EditButton cmd="insertUnorderedList" name="bullet"/>
+                    <EditButton cmd="italic" name="I" />
+                    <EditButton cmd="bold" name="B" />
+                    <EditButton cmd="underline" name="U" />
+                    <EditButton cmd="formatBlock" arg="h1" name="H" />
+                    <EditButton cmd="insertUnorderedList" name="BU" />
                     <EditButton
                         className="action_btn"
                         cmd="createLink"
                         arg="https://github.com/lovasoa/react-contenteditable"
-                        name="hyperlink"
+                        name="<->"
                     />
                 </div>
             </div>
@@ -76,13 +79,19 @@ function EditButton(props) {
           document.execCommand(props.cmd, false, props.arg); // Send the command to the browser
         }}
       >
-        {props.name || props.cmd}
+        {props.cmd === 'bold' ? <i className="fa fa-bold"></i> : ''}
+        {props.cmd === 'italic' ? <i className="fa fa-italic"></i> : ''}
+        {props.cmd === 'underline' ? <i className="fa fa-underline"></i> : ''}
+        {props.cmd === 'insertUnorderedList' ? <i className="fa fa-list-ul"></i> : ''}
+        {props.cmd === 'createLink' ? <i className="fa fa-link"></i> : ''}
+        {props.name === 'H' ? <i className="fa"><b>H</b></i> : ''}
+
       </button>
     );
   }
 
 const mapStateToProps = (state) => {
-    return { content: state.content };
+    return { content: state.content};
   }
   
 RenderTextArea = connect(mapStateToProps, {updateBlogBodyContent})(RenderTextArea)
