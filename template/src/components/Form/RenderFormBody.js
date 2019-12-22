@@ -32,7 +32,7 @@ class RenderFormBody extends React.Component {
         })}
       <div className="action_container">
         <button className="add_text" type="button" onClick={() => {
-            newContent.push({"type": 'text'});
+            newContent.push({"type": 'text', "backgroundCover": {}});
             this.props.updateBlogBodyContent(newContent);
             }}>
           Add Text Field  
