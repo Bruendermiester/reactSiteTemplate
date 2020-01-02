@@ -10,8 +10,23 @@ class BlogForm extends React.Component {
 
   constructor() {
     super();
+    if(window.location.pathname.includes("edit")) {
+      this.id = window.location.pathname.split('/')[2] - 1;
+    }
+    
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+  componentDidMount() {
+    // TODO: this is fetch from database call
+    var content = this.props.state.articles[this.id];
+    this.props.updateBlogTitle(content.title);
+    this.props.updateHeroImage(content.heroImage);
+    this.props.updateBlogBodyContent(content.content);
+    this.props.updateBlogTitle(content.title);
+    
+  }
+
 
   getRandomId = (max) => {
     return Math.floor(Math.random() * Math.floor(max));

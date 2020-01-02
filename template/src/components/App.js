@@ -27,6 +27,7 @@ class App extends React.Component {
                         <Route path="/" exact component={ MainDisplay }/>
                         <Route path="/article/:handle" exact component={ ArticleDisplay }/>
                         <Route path="/create" exact component={ BlogCreateDisplay }/>
+                        <Route path="/edit/:handle" exact component={ BlogCreateDisplay }/>
                         <Route path="/aboutus" exact component={ AboutUs }/>
                     </div>
                 </BrowserRouter>

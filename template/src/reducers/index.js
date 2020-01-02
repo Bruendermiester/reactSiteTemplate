@@ -8,11 +8,13 @@ const articlesReducer = () => {
             "content": [
                 {
                     "type": "text",
-                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.',
+                    "backgroundCover": {'italic': false, 'bold': false, 'underline': false, 'formatBlock': false, 'insertUnorderedList': false, 'createLink': false}
                 },
                 {
                     "type": "text",
-                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.'
+                    "text": 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Adipiscing erat facilisi parturient ultrices nostra nibh eu.',
+                    "backgroundCover": {'italic': false, 'bold': false, 'underline': false, 'formatBlock': false, 'insertUnorderedList': false, 'createLink': false}
                 },
                 {
                     "type": "file",

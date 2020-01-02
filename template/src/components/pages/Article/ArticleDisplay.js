@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../Header/Header';
 import DisplayImage from './DisplayImage';
 import DisplayText from './DisplayText';
+import { Link } from 'react-router-dom';
 import './ArticleDisplay.css';
 
 class ArticleDisplay extends React.Component {
@@ -16,6 +17,7 @@ class ArticleDisplay extends React.Component {
             <div>
                 <Header/>
                 <div id="article_display">
+                    <Link to={"/edit/" + article.id}>Edit</Link>
                     <div className="main_image" style={ backgroundImage }></div>
                     {articleContent.map((content, index) => {
                         return (
