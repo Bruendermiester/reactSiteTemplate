@@ -41,7 +41,7 @@ class BlogForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log("You tried to submit", this.props, this.props.state)
+    console.log("You tried to submit", this.props, this.props.state);
     let article = {
       id: this.getRandomId(100000000000000),
       title: this.props.state.title,
@@ -50,6 +50,7 @@ class BlogForm extends React.Component {
       author: 'Jonathan Bruenderman',
       date: Date(Date.now())
     };
+    // TODO: Check for Id and see if you are updating or adding a new one here
     this.props.state.articles.push(article);
     // Uncomment when ready to clear and navigate to home page
     // this.reset();

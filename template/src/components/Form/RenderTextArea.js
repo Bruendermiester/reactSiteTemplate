@@ -9,7 +9,6 @@ class RenderTextArea extends React.Component {
 
     render() {
         let newContent = Object.assign([], this.props.content);
-        console.log(newContent, this.props)
         let textValue= '';
         if(newContent[this.props.index].text) {
             textValue = newContent[this.props.index].text;
@@ -82,7 +81,6 @@ function EditButton(props) {
         width: '27px',
         position: 'absolute'
     } 
-    console.log(props, 'here')
     return (
       <button
         className="action_btn"
