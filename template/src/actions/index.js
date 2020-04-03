@@ -11,7 +11,6 @@ export const submitForm = bool => {
     };
 };
 export const updateBlogBodyContent = content => {
-    console.log("action call", content)
     return {
         type: "UPDATE_BLOG_BODY_CONTENT",
         payload: content

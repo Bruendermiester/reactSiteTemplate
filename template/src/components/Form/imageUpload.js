@@ -9,7 +9,7 @@ class renderImageField  extends React.Component{
     let newContent = Object.assign([], this.props.content); 
     let displaySrc = {
       backgroundImage: `url( ${newContent[this.props.index].src} )`
-    }
+    };
     return(
      <div className="image_box">
         <div id={`image-${this.props.index}`} className="display_image" style={ displaySrc } ></div>

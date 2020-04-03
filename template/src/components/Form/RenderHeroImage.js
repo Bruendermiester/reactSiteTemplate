@@ -7,7 +7,7 @@ class RenderHeroImage extends React.Component {
         let newHeroImage = Object.assign([], this.props.state.heroImage);
         let displaySrc = {
             backgroundImage: `url( ${newHeroImage.src} )`
-        }
+        };
         return(
             <div className="default_shading"> 
                 <div className="image_box">
@@ -39,7 +39,6 @@ class RenderHeroImage extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state)
   return { state: state };
 }
 

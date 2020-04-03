@@ -20,10 +20,13 @@ class BlogForm extends React.Component {
   componentDidMount() {
     // TODO: this is fetch from database call
     var content = this.props.state.articles[this.id];
-    this.props.updateBlogTitle(content.title);
-    this.props.updateHeroImage(content.heroImage);
-    this.props.updateBlogBodyContent(content.content);
-    this.props.updateBlogTitle(content.title);
+    if(content) {
+      this.props.updateBlogTitle(content.title);
+      this.props.updateHeroImage(content.heroImage);
+      this.props.updateBlogBodyContent(content.content);
+      this.props.updateBlogTitle(content.title);
+    }
+
     
   }
 
@@ -37,7 +40,7 @@ class BlogForm extends React.Component {
     this.props.updateBlogTitle('');
     this.props.updateHeroImage('');
     this.props.submitForm(true);
-  }
+  };
 
   handleSubmit = (event) => {
     event.preventDefault();
@@ -54,7 +57,7 @@ class BlogForm extends React.Component {
     this.props.state.articles.push(article);
     // Uncomment when ready to clear and navigate to home page
     // this.reset();
-  }
+  };
 
   render() {
     return (
